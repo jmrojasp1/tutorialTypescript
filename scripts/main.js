@@ -5,7 +5,7 @@ var inputSearchBox = document.getElementById("search-box");
 var totalCreditElm = document.getElementById("total-credits");
 btnfilterByName.onclick = function () { return applyFilterByName(); };
 renderCoursesInTable(dataCourses);
-totalCreditElm.innerHTML = "".concat(getTotalCredits(dataCourses));
+totalCreditElm.innerHTML = "".concat(getTotalCredits(dataCourses)); //Cuando accedes a la propiedad innerHTML de un elemento HTML, obtienes o puedes establecer el contenido HTML que está dentro de ese elemento, incluidas las etiquetas HTML y su contenido.
 function renderCoursesInTable(courses) {
     console.log('Desplegando cursos');
     courses.forEach(function (course) {

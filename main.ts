@@ -3,19 +3,21 @@ import { Course } from './course.js';
 
 import { dataCourses } from './dataCourses.js';
 
+// 1. cómo se referencian los objetos del DOM
 let coursesTbody: HTMLElement = document.getElementById('courses')!;
 const btnfilterByName: HTMLElement = document.getElementById("button-filterByName")!;
+
 const inputSearchBox: HTMLInputElement = <HTMLInputElement> document.getElementById("search-box")!;
 const totalCreditElm: HTMLElement = document.getElementById("total-credits")!;
 
-
+// 3. cómo se conecta un elemento HTML existente con el código TS
 btnfilterByName.onclick = () => applyFilterByName();
 
 renderCoursesInTable(dataCourses);
 
-totalCreditElm.innerHTML = `${getTotalCredits(dataCourses)}`
+totalCreditElm.innerHTML = `${getTotalCredits(dataCourses)}` //Cuando accedes a la propiedad innerHTML de un elemento HTML, obtienes o puedes establecer el contenido HTML que está dentro de ese elemento, incluidas las etiquetas HTML y su contenido.
 
-
+// 2. cómo se crean nuevos elementos HTML
 function renderCoursesInTable(courses: Course[]): void {
   console.log('Desplegando cursos');
   courses.forEach((course) => {
