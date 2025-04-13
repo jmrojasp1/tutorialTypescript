@@ -1,11 +1,13 @@
 
-import { Course } from './course.js';
+  import { Course } from './course.js';
 
-export const dataCourses = [
-  new Course("Ingeniería de Sw", "Pablo Picasso", 4),
-  new Course("Futbol 1", "Freddy Rincón", 2),
-  new Course("Algoritmos", "Carlos Fuentes", 2),
-  new Course("Estructuras de Datos", "Yesid D", 1),
-  new Course("Futbol 2", "James R", 6)
-] 
-  
+  export const dataCourses = [
+    new Course("Ingeniería de Sw", "Kelly Garcés", 3),
+    new Course("Proba 1", "Nicolas Mejia", 3),
+    new Course("Cálculo Vectorial", "Alexander Cardona", 3),
+    new Course("Fundamentos de Producción", "Daniel Giraldo", 3),
+    new Course("Principios de Optimización ", "Sofia Castro", 3),
+    new Course("Sistemas de Control Gerencial ", "Andrea Cortes", 3)    
+    
+  ] 
+    
